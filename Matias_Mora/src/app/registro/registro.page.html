@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>PRUEBA UNO</ion-title>
+  </ion-toolbar>
+  <ion-back-button>atras</ion-back-button>
+</ion-header>
+
+<ion-content>
+  <br>
+<br>
+<br>
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-title>Nueva cuenta</ion-title>
+    <div class="ion-padding">Completa los campos</div>
+    <br>
+    <br>
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input type="text" name="usuario" maxlength="8" minlenght="3"></ion-input>
+
+    <ion-label position="floating">Correo</ion-label>
+    <ion-input type="correo" name="correo"></ion-input>
+
+    <ion-list>
+      <ion-item>
+        <ion-select interface="popover" placeholder="Selecciona tu carrera">
+          <ion-select-option value="cocina">Cocina</ion-select-option>
+          <ion-select-option value="informatica">Informatica</ion-select-option>
+          <ion-select-option value="redes">Redes</ion-select-option>
+          <ion-select-option value="administracion">Administracion</ion-select-option>
+          <ion-select-option value="otra">Otra</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password" name="contraseña" minlenght="4"></ion-input>
+    <br>
+    <ion-button (click)="presentAlert()">Registrar</ion-button>
+    <ion-button fill="clear">Limpiar</ion-button>
+  </div>
+
+</ion-content>
+
+
